@@ -9,15 +9,15 @@ export default ({ req, isDev }, inject ) => {
       var value = null;
       if(process.client){
         value = Cookies.get(key);
-      }else{
+      }else if(req && req.headers){
         value = cookie.parse(req.headers.cookie || '')[key]
       }
       return value?JSON.parse(value):null;
     },
-    setItem: (key, value) => Cookies.set(key, JSON.stringify(value), { expires: 30, secure: !isDev }), // 30 days 
+    setItem: (key, value) => Cookies.set(key, JSON.stringify(value), { expires: 30, secure: !isDev }), // 30 days
     removeItem: key => Cookies.remove(key),
-    getToken: () => process.client ? Cookies.get(token) : cookie.parse(req.headers.cookie || '')[token],
-    setToken: (value) => Cookies.set(token, value, { expires: 30, secure: !isDev }), // 30 days 
+    getToken: () => process.client ? Cookies.get(token) : (req && req.headers ? cookie.parse(req.headers.cookie || '')[token] : null),
+    setToken: (value) => Cookies.set(token, value, { expires: 30, secure: !isDev }), // 30 days
     clearForLogout: () => {
       Cookies.remove(token);
       Cookies.remove(tokenTime);

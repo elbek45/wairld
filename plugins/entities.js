@@ -16,11 +16,11 @@ export default ({ app, $axios }, inject) => {
       })
     },
     getTitle(model){
-      var title = "Sinfxona.uz";
+      var title = "Wairld - World of AI";
       if(model){
         title = model.name;
         title += (" | "+model.category.name);
-        title += " | Sinfxona.uz";
+        title += " | Wairld";
       }
       return title;
     },

@@ -58,13 +58,22 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/dotenv',
+    ['@nuxtjs/dotenv', {
+      filename: process.env.NODE_ENV === 'production' ? '.env.production' : '.env'
+    }],
     "vue2-editor/nuxt",
     ["@openafg/nuxt-fullpage", {
       activeSection: 1
         // Options
     }]
   ],
+
+  // Environment variables
+  env: {
+    API_URL: process.env.API_URL,
+    BASE_URL: process.env.BASE_URL,
+    VUE_APP_API_BASE_URL: process.env.VUE_APP_API_BASE_URL
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
