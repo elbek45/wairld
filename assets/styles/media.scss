@@ -1,0 +1,946 @@
+@media screen and (max-width: 2000px) {
+  .pitchDeckBannerImage{
+    right: -200px;
+  }
+}
+@media screen and (max-width: 1800px) {
+  body:not(.sidebarClosed) {
+    .products li{
+      flex: 0 0 25%;
+    }
+  }
+}
+@media screen and (max-width: 1600px) {
+  .categoriesCells li{
+    flex: 0 0 25%;
+  }
+  .sidebarClosed{
+    .categoriesCells li{
+      flex: 0 0 20%;
+    }
+  }
+  // .nowrap-items{
+  //   .categoriesCells{
+  //     li{
+  //       flex: 0 0 278px;
+  //     }
+  //   }
+  // }
+}
+@media screen and (max-width: 1450px) {
+  .categoriesCells li{
+    flex: 0 0 33.33333333%;
+  }
+  .sidebarClosed{
+    .categoriesCells li{
+      flex: 0 0 25%;
+    }
+  }
+  .buyNftSectionImage1{
+    top: 7%;
+    left: 29%;
+    max-width: 33%;
+  }
+  .buyNftSectionImage2 {
+    top: -32%;
+    right: -24%;
+    max-width: 40%;
+  }
+  .teamMembers li{
+    flex: 0 0 50%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .products li{
+    flex: 0 0 25%;
+  }
+  body:not(.sidebarClosed) {
+    .products li{
+      flex: 0 0 33.333333%;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .innerHeader .logo{
+    margin-right: 0;
+  }
+  .headerEnd,
+  .headerNav ul li{
+    padding: 0;
+  }
+  .headerEndNav ul li a,
+  .headerNav ul li a{
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+  .buyNftSectionImage1 {
+    top: 16%;
+    left: 32%;
+    max-width: 24%;
+  }
+  .buyNftSectionImage2 {
+    top: -17%;
+    right: -17%;
+    max-width: 31%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .bannerVideoSlider .VueCarousel-slide .bannerVideoSliderItem{
+    width: 32vw;
+  }
+  .buyNftSection{
+    .cards-1{
+      display: block;
+      .card-1{
+        padding: 26px 30px;
+        max-width: 280px;
+        border-radius: 16px;
+        &:first-child{
+          margin-bottom: 260px;
+        }
+        &:last-child{
+          margin: 0 0 0 auto;
+        }
+        .card-1-title{
+          font-size: 16px;
+          margin-bottom: 16px;
+        }
+        .card-1-txt{
+          font-size: 14px;
+          line-height: 160%;
+        }
+      }
+    }
+  }
+  .buyNftSectionImage1 {
+    top: -10px;
+    left: 181px;
+    width: 328px;
+    max-width: 328px;
+  }
+  .buyNftSectionImage2 {
+    top: 398px;
+    right: auto;
+    left: -108px;
+    transform: rotateY(180deg);
+    max-width: 284px;
+  }
+  .buyNftSectionBtn{
+    text-align: right;
+  }
+  .pitchDeckBannerBlock-right{
+    margin-left: 0;
+  }
+  .pitchDeckBannerBlockArrow{
+    top: 100%;
+    width: 1px;
+    height: 50px;
+    border-radius: 0!important;
+    border-top: none!important;
+    z-index: 9;
+  }
+  .pitchDeckBannerBlock-left .pitchDeckBannerBlockArrow{
+    left: 50%;
+  }
+  .pitchDeckBannerBlock-right .pitchDeckBannerBlockArrow{
+    right: auto;
+    left: 20%;
+  }
+  .pitchDeckBannerImage{
+    right: -64px;
+  }
+  .pitchDeckCol .pitchDeck-title{
+    margin-bottom: 30px;
+    font-size: 34px;
+  }
+  .pitchDeckColDesc{
+    font-size: 18px!important;
+  }
+  .pitchDeckColTitle{
+    font-size: 24px!important;
+  }
+  .pitchDeckColDesc p{
+    margin-bottom: 15px;
+  }
+  .pitchDeckDevices{
+    padding: 70px 0;
+  }
+  .pitchDeckDevicesTitle{
+    font-size: 18px;
+  }
+  .pitchDeckDevicesList{
+    margin-top: 50px;
+  }
+  .pitchDeckDevicesList ul li{
+    max-width: 80px;
+  }
+  .pitchDeckDevicesTxt{
+    margin-top: 50px;
+    font-size: 14px;
+  }
+  .collections{
+    margin: -5px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    li{
+      padding: 5px;
+    }
+  }
+  .collection-item{
+    min-width: 350px;
+    padding: 5px;
+    .collection-item-cell{
+      padding: 3px;
+    }
+  }
+  .collection-item-cell{
+    height: 150px;
+  }
+  .collection-item-cell.collection-item-cell-full{
+    height: 300px;
+  }
+  .product-page-col1{
+    padding-right: 20px;
+  }
+  .product-page-image:after{
+    right: -20px;
+  }
+  .product-page-col2{
+    padding-left: 20px;
+  }
+  .product-info{
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #homeHeader,
+  #header{
+    display: none;
+  }
+  #mobHeader{
+    display: flex;
+  }
+  #content{
+    padding: 50px 0 0;
+  }
+  .title-64{
+    font-size: 34px;
+  }
+  .linkBlockCont{
+    padding: 5px 50px;
+  }
+  .teamMembers{
+    display: block;
+  }
+  .teamMembers li{
+    flex: 0 0 100%;
+  }
+  .fSectionGrid{
+    display: none;
+  }
+  .fSectionGridSlider{
+    display: block;
+  }
+  .whitepaper-sidebar{
+    display: none;
+  }
+  .whitepaper-content{
+    padding: 20px;
+  }
+  .whitepaper-container{
+    padding: 0;
+    display: block;
+  }
+  .roadmap-stages-row{
+    display: block;
+  }
+  .roadmap-stages-robot,
+  .roadmap-stages-arrow{
+    display: none;
+  }
+  .roadmap-page{
+    padding: 70px 0;
+  }
+  .roadmap-logo{
+    margin-bottom: 65px;
+  }
+  .roadmap-head-title{
+    font-size:34px;
+  }
+  .roadmap-head-txt{
+    font-size: 16px;
+  }
+  .roadmap-head{
+    margin-bottom: 50px;
+  }
+  .roadmap-stage-body{
+    padding: 30px 20px;
+  }
+  .roadmap-stage-list{
+    ul{
+      padding-left: 18px;
+      margin: 0;
+    }
+  }
+  .roadmap-stage{
+    margin-bottom: 40px;
+  }
+  #sidebar{
+    display: none;
+  }
+  #mobFooterNav{
+    display: block;
+  }
+  .defaultLayout{
+    padding-bottom: 66px;
+  }
+  #main-content{
+    padding: 65px 10px 50px;
+    .mainContainer{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .nowrap-items{
+    padding: 20px 15px;
+    margin: -20px -15px;
+    max-width: calc(100% + 30px);
+  }
+  .products{
+    margin: -8px;
+    li{
+      padding: 8px;
+    }
+  } 
+  .cabinetProfileCard{
+    padding: 30px 20px;
+  }
+  .profileEditCard{
+    padding: 30px 20px;
+  }
+  .cabinetCover{
+    top: 50px;
+  }
+  #cabinet{
+    padding: 140px 0 0!important;
+  }
+  .cardCells{
+    padding: 30px 20px;
+    .cardCell{
+      padding: 0 30px 0 0;
+      &:last-child{
+        padding: 0 0 0 30px;
+      }
+    }
+  }
+  .cardCell-title{
+    font-size: 24px;
+    line-height: normal;
+  }
+  .dashboardSliderItemContent{
+    padding: 16px;
+  }
+  .dashboardSliderItemContent2{
+    a{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: none!important;
+      *{
+        display: none;
+      }
+    }
+  }
+  .categoriesCells{
+    margin: -5px;
+    li{
+      padding: 5px;
+      .category-cell{
+        a{
+          background-size: 100%;
+          height: 200px;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .activeBannerVideo,
+  #bannerVideo{
+    height: 300px;
+    min-height: 300px;
+  }
+  .bannerVideoSlider .VueCarousel-slide .bannerVideoSliderItem{
+    width: 32vw;
+    height: 140px;
+  }
+  .bannerVideoSlider{
+    margin: -54px auto 0;
+  }
+  .linkBlock{
+    display: block;
+    .linkBlockCont{
+      padding: 18px 0 0;
+    }
+  }
+  .linkBlockImage{
+    text-align: center;
+  }
+  .pitchDeckBanner{
+    padding: 35px 0 50px;
+  }
+  .pitchDeck-title{
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .pitchDeckBannerBlock{
+    padding: 20px;
+  }
+  .pitchDeckBannerBlockTxt{
+    font-size: 14px;
+  }
+  .pitchDeckBannerBlock{
+    max-width: 85%;
+  }
+  .pitchDeckBannerBlock-first{
+    max-width: 100%;
+  }
+  .pitchDeckBannerImage{
+    max-width: 200px;
+  }
+  .pitchDeckRow{
+    display: block;
+    &.bgReverse{
+      .pitchDeckCol{
+        &:first-child{
+          padding-bottom: 50%;
+        }
+        &:last-child{
+          margin-top: -50%;
+          background: none;
+        }
+      }
+    }
+    &.bgReverse100{
+      .pitchDeckCol{
+        &:first-child{
+          padding-bottom: 60%;
+        }
+        &:last-child{
+          margin-top: -60%;
+          background: none;
+        }
+      }
+    }
+  }
+  .pitchDeckCol{
+    height: auto;
+    min-height: 0px;
+    line-height: normal;
+    .imgBox{
+      position: static;
+      padding: 56% 0 0;
+      border-radius: 10px;
+    }
+  }
+  .pitchDeckTable{
+    border-top: none;
+  }
+  .pitchDeckColTxt{
+    max-width: 100%;
+    display: block;
+  }
+  .pitchDeckColDesc ul li{
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .pitchDeckBgSectionCol1Img{
+    right: -201px;
+    top: 0;
+    left: auto;
+    img{
+      max-width: 340px
+    }
+  }
+  .pitchDeckBgSectionCol2Img{
+    left: -220px;
+    top: 0;
+    transform: rotatey(180deg);
+    img{
+      max-width: 360px;
+    }
+  }
+  .pitchDeckBgSectionTxt{
+    padding: 30px;
+  }
+  .pitchDeckBgSectionTitle{
+    font-size: 16px;
+  }
+  .pitchDeckBgSectionDesc{
+    font-size: 14px;
+  }
+  .pitchDeckBgSectionCol1{
+    margin-bottom: 190px;
+  }
+  .pitchDeckBgSectionCol2{
+    margin-bottom: 300px;
+  }
+  .pitchDeckRoadMapTitle{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .pitchDeckRoadMapStage{
+    padding: 0 0 40px;
+    margin: 0;
+    &:before {
+      display: none;
+    }
+  }
+  .pitchDeckRoadMapStageMonth:before{
+    display: none;
+  }
+  .pitchDeckRoadMapStageNumber{
+    position: relative;
+    width: 100%;
+    left: auto;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .pitchDeckRoadMapStageMonth{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .pitchDeckRoadMapStageTaskList{
+    font-size: 14px;
+    ul{
+      li{
+        margin-bottom: 2px;
+      }
+    }
+  }
+  .pitchDeckRoadMap{
+    padding: 50px 15px 0;
+  }
+  .partnershipModalTabs ul li a{
+    padding: 20px;
+    font-size: 20px;
+  }
+  .partnershipModalBody{
+    padding: 20px;
+  }
+  .partnershipModalTitle{
+    font-size: 26px;
+  }
+  .partnershipModalTxt{
+    font-size: 18px;
+    line-height: normal;
+  }
+  .partnershipModalBody{
+    .row{
+      .col-md-4{
+        flex: auto;
+      }
+    }
+  }
+  .partnershipModal .el-dialog__headerbtn{
+    top: 20px;
+    right: 20px;
+  }
+  .collection-item-cell{
+    height: 135px;
+  }
+  .collection-item-cell.collection-item-cell-full{
+    height: 270px;
+  }
+  .listTabsDropDown{
+    padding: 48px 15px 20px;
+  }
+  .listTabsDropDownList{
+    display: block!important;
+  }
+  .listTabsDropDownImg{
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .homeSection{
+    padding: 40px 0 50px!important;
+  }
+  .whitepaper-nagivation{
+    display: flex;
+    flex-direction: column-reverse;
+    button{
+      width:100%;
+      margin-bottom: 10px;
+    }
+  }
+  .cabinetRow{
+    display: block;
+    .cabinetCol1{
+      padding: 0 0 30px;
+    }
+  }
+  .change-cover-btn{
+    img{
+      margin: 0!important;
+    }
+    span{
+      display: none;
+    }
+  }
+  .cardCells{
+    display: block;
+    padding: 0 20px;
+    .cardCell{
+      padding: 30px 0!important;
+      border-right: none!important;
+      text-align: center;
+      &:first-child{
+        border-bottom: 1px solid rgba(119, 123, 137, 0.3)!important;
+      }
+    }
+  }
+  .cardCell-title{
+    font-size: 16px;
+  }
+  .cardCell-txt{
+    min-height: 0px;
+    font-size: 14px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .product-page{
+    display: block;
+    margin-bottom: 0;
+  }
+  .product-page-col1{
+    padding: 0;
+    .product-page-tags,
+    .product-page-tabs-body,
+    .product-page-tabs{
+      display: none;
+    }
+  }
+  .product-page-col2{
+    padding: 0;
+  }
+  .product-page-image:after{
+    display: none;
+  }
+  .mobProductTabs{
+    display: block;
+  }
+  .product-info-card{
+    padding: 20px!important;
+  }
+  .product-price-label{
+    margin-bottom: 0;
+  }
+  .product-price-swc{
+    font-size: 24px;
+  }
+  .categoriesCells{
+    li{
+      flex: 0 0 33.333333%!important;
+    }
+  }
+  .category-cell-title{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px){
+  .partnershipModalTxt{
+    margin-bottom: 20px;
+  }
+  .partnershipModalBody .row .col-md-4{
+    margin-bottom: 30px;
+  }
+  .testForTester{
+    max-height: none;
+    padding: 0 10px 0 0;
+  }
+  .partnershipModalBodySubmit{
+    padding: 5px 0 0!important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .title-36{
+    font-size: 16px;
+  }
+  .teamMemberFullname{
+    font-size: 16px;
+  }
+  .joinOurCommunityTxt{
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  .faqSectionHead{
+    margin-bottom: 38px;
+  }
+  .faqAccordion{
+    padding: 18px 18px 40px;
+  }
+  .faqAccordionNumber{
+    font-size: 20px;
+    top: 4px;
+  }
+  .faqAccordion .el-collapse .el-collapse-item .el-collapse-item__header{
+    border-bottom: none;
+    padding: 12px 0;
+  }
+  .faqAccordionTitle{
+    font-size: 14px;
+  }
+  .faqAccordion .el-collapse .el-collapse-item{
+    padding: 0 0 0 50px;
+    border-bottom: 1px solid #fff;
+  }
+  .faqAccordion .el-collapse .el-collapse-item__content{
+    border-bottom: none;
+  }
+  .footer{
+    padding: 50px 0;
+  }
+  .footerTitle{
+    font-size: 16px;
+  }
+  .minFooter{
+    display: block;
+    text-align: center;
+    padding: 38px 0;
+  }
+  .footerMinIco{
+    display: none;
+  }
+  .footerMinTxt{
+    margin-bottom: 20px;
+  }
+  .marketplaceSection-title{
+    font-size: 20px;
+  }
+  .createAndSellNFT{
+    display: block;
+    padding: 36px 15px 50px;
+    .createAndSellNFTCel1{
+      text-align: center;
+      margin: 0 0 30px;
+      max-width: 100%;
+    }
+  }
+  .product-page-image{
+    .marmoset-viewer-host.marmoset-viewer-host__responsive > div,
+    #marmosetUI,
+    canvas{
+      height: 400px!important;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .linkBlockTitle{
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+  .linkBlockTxt{
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 30px;
+  }
+  .bannerVideoSlider .VueCarousel-slide .bannerVideoSliderItem{
+    width: 144px;
+    height: 80px;
+  }
+  .title-64{
+    font-size: 16px;
+  }
+  .teamMember{
+    padding: 20px;
+  }
+  .teamMembers li{
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .whitepaper-content-title{
+    font-size: 16px;
+  }
+  .whitepaper-content-txt p{
+    margin-bottom: 18px;
+  }
+  .whitepaper-content-head{
+    padding: 0 0 10px;
+    margin-bottom: 20px;
+  }
+  .whitepaper-footer{
+    text-align: center;
+    display: block;
+    .whitepaper-updated{
+      margin-bottom: 30px;
+    }
+  }
+  .pitchDeckBgSection{
+    padding: 40px 10px;
+  }
+  .pitchDeckBgSectionCol2{
+    margin-left: 90px;
+  }
+  .pitchDeckBgSectionCol1{
+    margin-right: 60px;
+  }
+  .pitchDeckCol .pitchDeck-title{
+    font-size: 20px!important;
+    margin-bottom: 20px;
+  }
+  .pitchDeckColTitle{
+    font-size: 16px!important;
+    margin-bottom: 10px;
+  }
+  .pitchDeckColDesc{
+    font-size:14px!important;
+  }
+  .pitchDeckCol{
+    padding: 20px 10px;
+  }
+  .pitchDeckRow.bgReverse100 .pitchDeckCol:first-child{
+    padding-bottom: 65%;
+  }
+  .pitchDeckRow.bgReverse100 .pitchDeckCol:last-child{
+    margin-top: -64%;
+  }
+  .pitchDeckRoadMap{
+    padding: 50px 10px 0;
+  }
+  .pitchDeckRoadMapStageTaskList{
+    ul{
+      padding: 0 0 0 16px;
+    }
+  }
+  .pitchDeckDevicesList ul{
+    justify-content: center;
+    li{
+      max-width: 80px;
+      padding: 16px;
+    }
+  }
+  .roadmap-logo{
+    img{
+      width: 300px;
+    }
+  }
+  .roadmap-head-title{
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
+  .roadmap-head-txt{
+    font-size: 14px
+  }
+  .roadmap-stage-title{
+    font-size: 16px;
+    width: 190px;
+    height: 40px;
+    line-height: 40px;
+    background-size: 100% 100%;
+  }
+  .roadmap-stage-state{
+    font-size: 16px;
+  }
+  .roadmap-stage-month{
+    font-size:16px;
+    margin-bottom: 16px;
+  }
+  .roadmap-stage-list ul li{
+    font-size:14px;
+  }
+  .profileEditFormPassword{
+    .link-suffix{
+      span{
+        display: none;
+      }
+    }
+  }
+  .form-type .el-form-item__content .link-suffix{
+    width: 20px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .profileEditFormPassword {
+    margin-right: 26px;
+  }
+  .profileEditCard {
+    .btn{
+      width:100%;
+    }
+  }
+  .btn{
+    font-size: 16px;
+  }
+  .cabinetProfilePhotoImage{
+    width: 100px;
+    height: 100px;
+  }
+  .cabinetProfileCardHead{
+    margin-bottom: 40px;
+  }
+  .dashboardSliderItem{
+    height: 170px;
+    .dashboardSliderItemTitle{
+      font-size: 16px;
+    }
+    .dashboardSliderItemTxt{
+      font-size: 14px;
+    }
+  }
+  .VueCarousel-pagination{
+    display: none;
+  }
+  .product-title{
+    font-size: 18px;
+  }
+  .product-owner{
+    padding: 0!important;
+    margin-bottom: 20px!important;
+  }
+  .product-page-image{
+    margin-bottom: 10px;
+    .viewer-display{
+      height: 350px!important;
+    }
+  }
+  .categoriesCells li .category-cell a{
+    height: 160px;
+    padding: 15px;
+  }
+  .nowrap-items{
+    .categoriesCells li{
+      flex: 0 0 250px!important;
+    }
+  }
+  .nowrap-items .brands .product-item, .nowrap-items .brands .category-cell, .nowrap-items .products .product-item, .nowrap-items .products .category-cell, .nowrap-items .categoriesCells .product-item, .nowrap-items .categoriesCells .category-cell{
+    min-width: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .snSignButtons{
+    display: block;
+    a{
+      display: block;
+      margin-bottom: 10px;
+      text-align: center;
+      img{
+        border-radius: 27px;
+      }
+    }
+  }
+  .categoriesCells li{
+    flex: 0 0 50%!important;
+  }
+}
+@media screen and (max-width: 400px) {
+  #mobFooterNav ul li a span{
+    font-size: 12px;
+  }
+}

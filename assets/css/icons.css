@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icons/icomoon.eot?gqmudg');
+  src:  url('../fonts/icons/icomoon.eot?gqmudg#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?gqmudg') format('truetype'),
+    url('../fonts/icons/icomoon.woff?gqmudg') format('woff'),
+    url('../fonts/icons/icomoon.svg?gqmudg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-basket:before {
+  content: "\e900";
+}
+.icon-arrow-prev:before {
+  content: "\e901";
+}
+.icon-arrow-next:before {
+  content: "\e902";
+}
+.icon-dollar-circle:before {
+  content: "\e903";
+}
+.icon-info-with-circle:before {
+  content: "\e904";
+}
+.icon-verified-brand-solid:before {
+  content: "\e905";
+}
+.icon-category-fill:before {
+  content: "\e906";
+}
+.icon-icon-artstation:before {
+  content: "\e907";
+}
+.icon-icon-discord:before {
+  content: "\e908";
+}
+.icon-icon-facebook:before {
+  content: "\e909";
+}
+.icon-icon-instagram:before {
+  content: "\e90a";
+}
+.icon-icon-linkedin:before {
+  content: "\e90b";
+}
+.icon-icon-twitter:before {
+  content: "\e90c";
+}
+.icon-ion_create:before {
+  content: "\e90d";
+}
+.icon-jam_refresh:before {
+  content: "\e90e";
+}
+.icon-material-symbols_arrow-drop-down-rounded:before {
+  content: "\e90f";
+}
+.icon-material-symbols_keyboard-arrow-down-rounded:before {
+  content: "\e910";
+}
+.icon-space-dashboard:before {
+  content: "\e911";
+}
+.icon-mdi_box-arrow-up:before {
+  content: "\e912";
+}
+.icon-mdi_graph-pie:before {
+  content: "\e913";
+}
+.icon-Polygon-1:before {
+  content: "\e914";
+}
+.icon-Polygon-30:before {
+  content: "\e915";
+}
+.icon-ri_exchange-fill:before {
+  content: "\e916";
+}
+.icon-ShowPassword:before {
+  content: "\e917";
+}
+.icon-solar_bell-bold:before {
+  content: "\e918";
+}
+.icon-arrow-md-prev:before {
+  content: "\e919";
+}
+.icon-arrow-md-next:before {
+  content: "\e91a";
+}
+.icon-link-arrow:before {
+  content: "\e91b";
+}
+.icon-user:before {
+  content: "\e91c";
+}
+.icon-password:before {
+  content: "\e91d";
+}
+.icon-close:before {
+  content: "\e91e";
+}

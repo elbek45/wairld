@@ -1,0 +1,115 @@
+#adminMainWrap{
+  padding: 0 0 0 300px;
+  #content{
+    padding: 20px;
+  }
+}
+#adminSideBar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #0f1a34;
+  color: #fff;
+}
+.adminSideBarHead{
+  background: #182444;
+  padding: 20px;
+  text-align: center;
+  height: 66px;
+}
+.adminSideBarBody{
+  padding: 0 0 50px;
+  max-height: calc(100vh - 66px);
+  overflow-y: auto;
+}
+.adminSideBarNav{
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      list-style: none;
+      a{
+        padding: 12px 12px 12px 26px;
+        display: flex;
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Metropolis-Medium';
+        &.nuxt-link-active,
+        &:hover{
+          background: #091023;
+          color: #acb6c4;
+        }
+        span{
+          display: block;
+          flex: auto;
+          padding: 4px 0;
+        }
+      }
+      ul{
+        li{
+          a{
+            padding-left: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+.adminSideBarIco{
+  flex: 0 0 40px;
+}
+#adminCard{
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+}
+.pageTitle20{
+  font-size: 20px;
+  font-family: 'Metropolis-SemiBold';
+  color: #302d43;
+  margin-bottom: 15px;
+}
+.table-1{
+  width: 100%;
+  thead{
+    th{
+      color: #6f7a92;
+      font-weight: normal;
+      padding: 15px 10px 5px;
+    }
+  }
+  tbody{
+    border-top: 10px solid #fff;
+    tr{
+      td{
+        background: #f9f9f9;
+        border-bottom: 10px solid #fff;
+        color: #6f7a92;
+        padding: 10px;
+      }
+    }
+  }
+}
+.table-head{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .pageTitle20{
+    margin-bottom: 0;
+  }
+}
+.btn-sm{
+  padding: 10px 15px!important;
+  font-size: 14px;
+}
+.blockEditBtn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.admin-minContainer{
+  max-width: 800px;
+  margin: 0 auto;
+}

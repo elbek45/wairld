@@ -1,0 +1,70 @@
+stages:
+  - deploy
+  # - build
+
+DEV Deploy:
+  stage: deploy
+  when: manual
+  environment: Production
+  before_script:
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$DEV_SSH_KEY")
+    - mkdir -p ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - ssh-keyscan -H $DEV_DEPLOY_SERVER >> ~/.ssh/known_hosts
+  script:
+    - rsync -arv --cvs-exclude --exclude=".env" --exclude="node_modules" --delete $DEV_TARGET_DIR_ON_LOCAL $DEV_SSH_USER@$DEV_DEPLOY_SERVER:$DEV_TARGET_DIR_ON_HOST
+    - ssh $DEV_SSH_USER@$DEV_DEPLOY_SERVER "cd ${DEV_TARGET_DIR_ON_HOST} && npm run build"
+    - ssh $DEV_SSH_USER@$DEV_DEPLOY_SERVER "sudo systemctl restart secondworldweb-front.service"
+  tags: [deploy]
+
+DEV Deploy npm i:
+  stage: deploy
+  when: manual
+  environment: Production
+  before_script:
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$DEV_SSH_KEY")
+    - mkdir -p ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - ssh-keyscan -H $DEV_DEPLOY_SERVER >> ~/.ssh/known_hosts
+  script:
+    - rsync -arv --cvs-exclude --exclude=".env" --delete $DEV_TARGET_DIR_ON_LOCAL $DEV_SSH_USER@$DEV_DEPLOY_SERVER:$DEV_TARGET_DIR_ON_HOST
+    - ssh $DEV_SSH_USER@$DEV_DEPLOY_SERVER "cd ${DEV_TARGET_DIR_ON_HOST} && npm install"
+    - ssh $DEV_SSH_USER@$DEV_DEPLOY_SERVER "cd ${DEV_TARGET_DIR_ON_HOST} && npm run build"
+    - ssh $DEV_SSH_USER@$DEV_DEPLOY_SERVER "sudo systemctl restart secondworldweb-front.service"
+  tags: [deploy]
+
+
+# PROD Deploy:
+#   stage: deploy
+#   only:
+#     - "master"
+#   when: manual
+#   environment: Production
+#   before_script:
+#     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+#   script:
+#     - export SSHPASS=$SSH_USER_PASS_PROD
+#     - sshpass -e rsync -arv --cvs-exclude --exclude=".env" --exclude="static" --exclude="node_modules" --delete $TARGET_DIR_ON_LOCAL $SSH_USER_PROD@$DEPLOY_SERVER:$TARGET_DIR_ON_HOST_PROD
+#     - sshpass -e ssh $SSH_USER_PROD@$DEPLOY_SERVER "cd ${TARGET_DIR_ON_HOST_PROD} && npm run build"
+#     - sshpass -e ssh $SSH_USER_PROD@$DEPLOY_SERVER "sudo systemctl restart ish-service.service"
+#     - python3 $NOTIFICATION_RUNNER "❗️❗️Внимание PROD" "Project - $CI_PROJECT_NAME" "STAGE_NAME - $CI_JOB_NAME" "Project URL - $CI_PROJECT_URL" "Commit Message - $CI_COMMIT_MESSAGE" "Execution by - $GITLAB_USER_NAME"
+#   tags: [deploy]
+
+# PROD Deploy npm i:
+#   stage: deploy
+#   only:
+#     - "master"
+#   when: manual
+#   environment: Production
+#   before_script:
+#     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+#   script:
+#     - export SSHPASS=$SSH_USER_PASS_PROD
+#     - sshpass -e rsync -arv --cvs-exclude --exclude=".env" --exclude="static" --delete $TARGET_DIR_ON_LOCAL $SSH_USER_PROD@$DEPLOY_SERVER:$TARGET_DIR_ON_HOST_PROD
+#     - sshpass -e ssh $SSH_USER_PROD@$DEPLOY_SERVER "cd ${TARGET_DIR_ON_HOST_PROD} && npm install"
+#     - sshpass -e ssh $SSH_USER_PROD@$DEPLOY_SERVER "cd ${TARGET_DIR_ON_HOST_PROD} && npm run build"
+#     - sshpass -e ssh $SSH_USER_PROD@$DEPLOY_SERVER "sudo systemctl restart ish-service.service"
+#     - python3 $NOTIFICATION_RUNNER "❗️❗️Внимание PROD" "Project - $CI_PROJECT_NAME" "STAGE_NAME - $CI_JOB_NAME" "Project - $CI_PROJECT_NAME" "Project URL - $CI_PROJECT_URL" "Commit Message - $CI_COMMIT_MESSAGE" "Execution by - $GITLAB_USER_NAME"
+#   tags: [deploy]
